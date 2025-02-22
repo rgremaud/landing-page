@@ -10,8 +10,8 @@ body {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .logo-text {
@@ -57,8 +57,8 @@ a {
 
 .content {
     display: flex;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
     margin-top: 100px;
     margin-bottom: 100px;
     justify-content: space-between;
@@ -69,7 +69,7 @@ a {
     background-color: gray;
     max-height: 300px;
     width: 600px;
-    flex-shrink: 0;
+    
     text-align: center;
     padding-top: 125px;
     padding-bottom: 125px;
@@ -83,20 +83,37 @@ a {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     padding: 5px 30px;
     border-radius: 8px;
     background-color: #3882F6;
     color: #F9FAF8;
-    flex-shrink: 0;
     font-weight: 800;
     font-size: 18px;
-    flex-grow: 0;
+    max-height: 32px;
+}
+
+.header-text {
+    display: flex;
+    font-size: 36px;
+    color: #1F2937;
+    weight: 900;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 200px;
 }
 
 .four-squares {
     display: flex;
+    justify-content: center;
     background-color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-wrap: wrap;
+    gap: 55px;
 }
 
 .blue-box {
@@ -104,4 +121,25 @@ button {
     width: 175px;
     border-radius: 10px;
     border: 5px solid #3882F6;
+    flex-shrink: 0;
+}
+
+.square-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 175px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.big-quote {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 36px;
 }
